@@ -1,0 +1,536 @@
+/* Обнуление */
+
+a{
+    text-decoration: none;
+}
+
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+
+li,
+ol,
+ul{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-style: Montserrat;
+}
+
+
+html,
+body{
+    height: 100%;
+    line-height: 1;
+    font-size:14px;
+    color:#000;
+    color:white;
+    font-weight: 400;
+    font-family: Montserrat;
+}
+
+.wrapper
+{
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+._container
+{
+    max-width: 1046px;
+    margin:0 auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+
+
+}
+
+/* --------------------------------------------ШАПКА-------------------------------------------- */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background: black;
+}
+
+.header__container {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: inherit;
+}
+.header__menu {
+    margin: 0px 0px 0px 300px;
+}
+
+@media (max-width: 992px) {
+    .header__menu {
+        margin: 0px 0px 0px 80px;
+    }
+}
+
+@media (max-width: 479px) {
+    .header__menu {
+        margin: 0px 0px 0px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__menu {
+        margin: 0px 0px 0px 50px;
+    }
+}
+
+.menu {
+    /* отступ безопасности */
+    padding: 5px 0; 
+    z-index: 9999999999999999999;
+}
+
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.menu-item:not(:last-child) {
+    margin: 0px 21px 0px 0px;
+
+}
+.menu__link {
+    color:white;
+    line-height: calc(24/14*100%);
+}
+
+.menu__list li a:hover{
+    background-color:orange;
+}
+
+/* -------------------------------------------Бургер----------------------------------------------- */
+#checkbox_toggle
+{
+    display: none;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.hamburger-line
+{
+    background-color: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 26px;
+}
+
+
+.hamburger-line::before,
+.hamburger-line::after
+{
+    content: '';
+    background-color: white;
+    display: block;
+    position: absolute;
+    transition: all .3s;
+    width: 100%;
+    height: 100%;
+
+}
+
+.hamburger-line::before
+{
+    top:6px;
+}
+
+.hamburger-line::after
+{
+    top:-6px;
+}
+
+
+
+/* мобильные устройства */
+@media (max-width: 709px) {
+    .header__menu {
+        margin: 0px 0px 0px 415px;
+
+    }
+    .menu__link {
+        font-size: 18px;
+    }
+    .menu-item {
+        margin: 0px 21px 0px 0px;
+    
+    }
+    
+    .menu__list
+    {
+        overflow: hidden;
+        position: absolute;
+        right:0;
+        left: 0;
+        visibility: hidden;
+
+
+    }
+
+    #checkbox_toggle:checked ~ .menu__list
+    {
+        visibility:visible;
+        margin-top: 31px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        transition: all, .5s;
+        min-height:20em;
+        width: 100%;
+        z-index: 99999999999999999999999999999999999999999;
+        background-color: #000 ;
+        justify-content: space-around;
+
+    }
+
+
+
+    .hamburger{
+
+        display: block;
+        padding: 20px 0;
+        margin-right: 20px;
+
+    }
+
+    
+
+    #checkbox_toggle:checked ~ .hamburger .hamburger-line
+    {
+       background-color: transparent;
+    }
+
+    #checkbox_toggle:checked ~ .hamburger .hamburger-line::before
+    {
+        transform: rotate(-45deg);
+        top:0;
+    }
+
+    #checkbox_toggle:checked ~ .hamburger .hamburger-line::after
+    {
+        transform: rotate(45deg);
+        top:0;
+    }
+
+}
+
+@media (max-width: 510px) {
+    .header__menu {
+        margin: 0px 0px 0px 215px;
+    }
+
+    .picture-wrapper
+    {
+        width: 30%;
+        margin:0 auto;
+    }
+   
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* --------------------------------------------PAGE-------------------------------------------- */
+.page
+{
+    flex: 1 1 auto;
+    background: url(https://wallpapertag.com/wallpaper/full/2/5/8/438278-free-download-black-steel-background-1920x1200-for-ios.jpg) no-repeat;
+    background-size: cover;
+    margin:0;
+}
+
+.main_picture_wrapper
+{
+    margin-top: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;  
+}
+.main_picture
+{
+    height: 400px;
+    width: 450px;
+}
+
+
+
+p {
+    line-height: 1.5;
+}
+
+li h3
+{
+    font-size: 20px;
+    line-height: 1.5em;
+
+}
+
+aside img
+{
+    margin-top: 20px;
+    margin-right:20px;
+    float: right;
+    width: 15em;
+    height: auto;
+    margin-left:2em;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+/* --------------------------------------------Footer------------------------------------------------- */
+.footer{
+    background-color: black;
+    color:inherit;
+    font-family: Montserrat;
+}
+
+.footer_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_list .footer__link
+{
+    display: block;
+    margin: 25px;
+    color:white;
+}
+
+.footer_list .footer__link:hover
+{
+    border-bottom: 1px solid;
+}
+
+
+
+
+.cards ul{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.cards .cards-item{
+    width: 500px;
+    height: auto;
+    position: relative;
+    margin-top: 40px;
+}
+
+.cards img{
+    max-width: 100%;
+}
+
+.cards-item h3
+{
+    position: absolute;
+    top:1em;
+    opacity: 0;
+}
+
+.cards-item p
+{
+    position: absolute;
+    top:50%;
+    left: 1em;
+    right: 1em;
+    opacity: 0;
+}
+
+.cards-item a
+{
+    position: absolute;
+    top:80%;
+    left: 5%;
+    border: 1px solid black;
+    padding: 6px;
+    text-decoration: none;
+    color: black;
+    opacity: 0;
+}
+
+.cards-item::before
+{
+    content:'';
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(222, 212, 212);
+    opacity: 0;
+    transition: all .9s;
+    transform: scale(0);
+    transform: rotate(45deg);
+
+}
+
+.cards-item:hover:before
+{
+    opacity: 0.5;
+    transform: scale(1);
+    transform: rotate(0);
+}
+
+.cards-item:hover{
+    transform: translateY(-15px);
+    transition: 1.2s ease-in-out;
+}
+
+.cards-item:hover h3
+{
+    opacity: 1;
+    color: black;
+}
+
+.cards-item:hover p
+{
+    opacity: 1;
+    color: black;
+    font-weight: bolder;
+}
+
+.cards-item:hover a
+{
+    opacity: 1;
+    z-index: 2;
+    font-weight: bold;
+}
+
+.cards_header
+{
+    margin-top: 2em;
+}
+
+
+
+/* ---------------------video--------------------------- */
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+    /* text-align: center; */
+}
+
+.video-wrapper h3 {
+    position: absolute;
+    color: orange;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.video-wrapper p {
+    position: absolute;
+    color: orange;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.video-item {
+    width: inherit;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.video-wrapper::before
+{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -50%;
+}
+
+.video-wrapper:hover::before
+{
+    background-color: black;
+    transition:.6s;
+    opacity: 1;
+    width: 100%;
+    height: 80%;
+    left: 10%;
+    top:10%;
+    z-index: 50;
+}
+
+.video-wrapper:hover h3
+{
+    transition: .7s;
+    top:30%;
+    left: 15%;
+    z-index: 99;
+    opacity: 1;
+}
+
+.video-wrapper:hover p
+{
+    top:40%;
+    left: 20%;
+    z-index: 99;
+    opacity: 1;
+}
+
+
+

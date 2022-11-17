@@ -1,0 +1,166 @@
+
+.main-block__container
+{
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+.history_head ,.descr
+{
+    margin-bottom: 30px;
+}
+
+.headers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.year_image_container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    /* background-size: 100%; */
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-top: 10px;
+    
+}
+
+.year_1947
+{
+    background: url(.img/lady.png) no-repeat;
+    background-position: top left;
+}
+.year_1956
+{
+    background: url(img/iskateli.jpeg) no-repeat;
+}
+
+.year_1972
+{
+    background: url(img/godfather.png) no-repeat;
+    background-position: center;
+}
+.year_1976
+{
+    background: url(img/taxi-driver.jpeg) no-repeat;
+    background-position: center;
+}
+
+.year_1983
+{
+    background: url(img/scarface.jpeg) no-repeat;
+    background-position: center;
+}
+
+.year_1985
+{
+    background: url(img/bttf.jpg) no-repeat;
+}
+
+.year_1997
+{
+    background: url(img/titanic.jpg) no-repeat;
+}
+
+.year_2009
+{
+    background: url(img/avatar.jpg) no-repeat;
+}
+
+.year_2019
+{
+    background: url(img/joker.png) no-repeat;
+}
+
+
+.year
+{
+    position: absolute;
+    top:10px;
+    z-index: 2;
+    color:white;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+
+
+.year::before
+{
+    position: absolute;
+    content: '';
+    top:-30px;
+    right:-39px;
+    width: 300%;
+    height:50px;
+    z-index: -1;
+    border-radius: 1em;
+    background-color:rgba(63, 60, 60, 0.352);
+}
+
+.year-2009::before{
+    right:-45px;
+}
+
+
+.year_image_container::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 30, 30, 0.421);
+    transition: all ease-in .3s;
+}
+
+.year_image_container:hover::before 
+{
+    background-color: rgba(20, 19, 19, 0.521);
+}
+
+.year_descr
+{
+    z-index:3;
+    justify-self:center;
+    align-self: center;
+    margin: 2rem;
+    margin-top: -2rem;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.year_image_container:hover >.year_descr
+{
+    opacity: 1;
+
+}
+
+
+.year_image_container h2
+{
+    z-index: 2;
+    margin-left:1em;
+    align-self: center;
+    margin-bottom:1.4em;
+    margin-top: 1.5em;
+}
+
+
+
+
+@media (max-width:1000px) {
+    .year_image_container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        min-height:600px ;
+    }
+}
