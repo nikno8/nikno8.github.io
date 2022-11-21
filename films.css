@@ -200,7 +200,7 @@ body{
     {
         align-items: center;
         justify-items: center;
-        margin:0 auto;
+        margin:5em auto;
         grid-template-areas: 
         "poster"
         "poster"
