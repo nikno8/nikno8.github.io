@@ -5,9 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Джанго освобожденный</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="films.css">
+    <link rel="icon" type = "image.png" href="img/logo.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap&subset=cyrillic-ext" rel="stylesheet" />
 </head>
-<body>
-    
+<body class="body">
+    <header class="header">
+        <div class="header__container _container">
+            <a href="" class="header__logo">
+                Мир кино
+            </a>
+            <nav class="header__menu menu">
+                <input type="checkbox" id="checkbox_toggle">
+                <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+                <ul class="menu__list">
+                    <li class="menu-item">
+                        <a href="index.html" class="menu__link">Главная страница</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="history.html" class="menu__link">История кино</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="gallery.html" class="menu__link">Галерея</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#footer" class="menu__link">Контактная информация</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="grid-wrapper">
+        <div class="poster_wrapper">
+            <img src="img/django_poster.webp" alt="джанго постер">
+        </div>
+        <section class="main_text">
+            <h2>Джанго освобожденный (2012)</h2>
+            <p>Метко шутя и стреляя, охотники за головами уничтожают негодяев. Квентин Тарантино пробует силы в вестерне</p>
+        </section>
+        <button class="feedback">Оценить фильм</button>
+        <div class="film-video-wrapper">
+            <video class="film-video" poster="img/django_video_poster.jpg" controls="controls" width="300" height="250">
+                <source src="videos/Джанго освобожденный[Трейлер на русском].mp4">
+            </video>
+        </div>
+        <div class="about">
+            <h3>
+                О фильме
+            </h3>
+            <div class="lists_wrapper">
+                <ul class="about_list">
+                    <li class="about_list_item">Год производства</li>
+                    <li class="about_list_item">Страна</li>
+                    <li class="about_list_item">Жанр</li>
+                    <li class="about_list_item">Слоган</li>
+                    <li class="about_list_item">Режиссер</li>
+                    <li class="about_list_item">Оператор</li>
+                    <li class="about_list_item">Бюджет</li>
+                </ul>
+                <ul class="descr_list">
+                    <li class="descr_list_item">2012</li>
+                    <li class="descr_list_item">США</li>
+                    <li class="descr_list_item">Вестерн, боевик</li>
+                    <li class="descr_list_item">«Они забрали его свободу. Он заберёт у них всё»</li>
+                    <li class="descr_list_item">Квентин Тарантино</li>
+                    <li class="descr_list_item">Роберт Ричардсон</li>
+                    <li class="descr_list_item">$100 000 000</li>
+                </ul>    
+            </div>
+        </div>
+        <div class="starring">
+            <h3> В ролях:</h3>
+            <ul>
+                <li class="starring-list-item">Джейми Фокс</li>
+                <li class="starring-list-item">Кристоф Вальц</li>
+                <li class="starring-list-item">Леонардо ДиКаприо</li>
+                <li class="starring-list-item">Керри Вашингтон</li>
+                <li class="starring-list-item">Сэмюэл Л. Джексон</li>
+                <li class="starring-list-item">Уолтон Гоггинс</li>
+                <li class="starring-list-item"> Деннис Кристофер</li>
+                <li class="starring-list-item"> Джеймс Римар</li>
+                <li class="starring-list-item"> Дон Джонсон</li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__container _container" id="footer">
+            <ul class="footer_list">
+                <li><a class="footer__link"href="tel:89035902472">Нажмите, чтобы связаться по телефону</a></li>
+                <li><a class="footer__link"href="mailto:nikitalagut03@gmail.com">Написать письмо</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

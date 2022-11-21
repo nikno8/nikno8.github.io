@@ -128,8 +128,11 @@ body{
     line-height: calc(24/14*100%);
 }
 
+
+
 .menu__list li a:hover{
-    background-color:orange;
+    border-bottom: 1px solid white;
+
 }
 
 /* -------------------------------------------Бургер----------------------------------------------- */
@@ -304,10 +307,10 @@ li h3
 
 aside img
 {
-    margin-top: 20px;
-    margin-right:20px;
+    margin-top: 2em;
+    margin-right:2em;
     float: right;
-    width: 15em;
+    width: 10em;
     height: auto;
     margin-left:2em;
     border-radius: 20px;

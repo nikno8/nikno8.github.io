@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Титаник</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="films.css">
+    <link rel="icon" type = "image.png" href="img/logo.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap&subset=cyrillic-ext" rel="stylesheet" />
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header__container _container">
+            <a href="" class="header__logo">
+                Мир кино
+            </a>
+            <nav class="header__menu menu">
+                <input type="checkbox" id="checkbox_toggle">
+                <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+                <ul class="menu__list">
+                    <li class="menu-item">
+                        <a href="index.html" class="menu__link">Главная страница</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="history.html" class="menu__link">История кино</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="gallery.html" class="menu__link">Галерея</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#footer" class="menu__link">Контактная информация</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="grid-wrapper">
+        <div class="poster_wrapper">
+            <img src="img/titanic_poster.webp" alt="титаник постер">
+        </div>
+        <section class="main_text">
+            <h2>Титаник</h2>
+            <p>Пассажир нижней палубы Джек выиграл билет в карты, а богатая наследница
+                Роза отправляется в Америку, чтобы выйти замуж по расчёту. Чувства молодых людей только успевают расцвести, и даже не классовые различия создадут испытания влюблённым,
+                а айсберг, вставший на пути считавшегося непотопляемым лайнера.</p>
+        </section>
+        <button class="feedback">Оценить фильм</button>
+        <div class="film-video-wrapper">
+            <video class="film-video" poster="img/titanic.jpg" controls="controls" width="300" height="250">
+                <source src="videos/">
+            </video>
+        </div>
+        <div class="about">
+            <h3>
+                О фильме
+            </h3>
+            <div class="lists_wrapper">
+                <ul class="about_list">
+                    <li class="about_list_item">Год производства</li>
+                    <li class="about_list_item">Страна</li>
+                    <li class="about_list_item">Жанр</li>
+                    <li class="about_list_item">Слоган</li>
+                    <li class="about_list_item">Режиссер</li>
+                    <li class="about_list_item">Оператор</li>
+                    <li class="about_list_item">Бюджет</li>
+                </ul>
+                <ul class="descr_list">
+                    <li class="descr_list_item">1997</li>
+                    <li class="descr_list_item">США, Мексика</li>
+                    <li class="descr_list_item">мелодрама, история, триллер, драма</li>
+                    <li class="descr_list_item">«Ничто на Земле не сможет разлучить их»</li>
+                    <li class="descr_list_item">Джеймс Кэмерон</li>
+                    <li class="descr_list_item">Рассел Карпентер</li>
+                    <li class="descr_list_item">$200 000 000</li>
+                </ul>    
+            </div>
+        </div>
+        <div class="starring">
+            <h3> В ролях:</h3>
+            <ul>
+                <li class="starring-list-item">Леонардо ДиКаприо</li>
+                <li class="starring-list-item">Кейт Уинслет</li>
+                <li class="starring-list-item">Билли Зейн</li>
+                <li class="starring-list-item">Кэти Бейтс</li>
+                <li class="starring-list-item">Фрэнсис Фишер</li>
+                <li class="starring-list-item">Глория Стюарт</li>
+                <li class="starring-list-item">Билл Пэкстон</li>
+                <li class="starring-list-item">Бернард Хилл</li>
+                <li class="starring-list-item">Дэвид Уорнер</li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__container _container" id="footer">
+            <ul class="footer_list">
+                <li><a class="footer__link"href="tel:89035902472">Нажмите, чтобы связаться по телефону</a></li>
+                <li><a class="footer__link"href="mailto:nikitalagut03@gmail.com">Написать письмо</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
