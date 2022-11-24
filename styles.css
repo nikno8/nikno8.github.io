@@ -57,21 +57,32 @@ body{
 {
     max-width: 1046px;
     margin:0 auto;
-    box-sizing: content-box;
+    box-sizing: border-box;
     padding: 0 15px;
 
 
 }
 
 /* --------------------------------------------ШАПКА-------------------------------------------- */
-.header {
-    position: absolute;
+header {
+    /* position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 99;
+    background: black; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    display: flex;
     background: black;
+    transition: 1.5s;
 }
+
+
+
 
 .header__container {
     display: flex;
@@ -79,11 +90,21 @@ body{
     align-items: center;
 }
 
+/* .header__logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: inherit;
+} */
+
+
 .header__logo {
+    position: relative;
     font-size: 24px;
     font-weight: bold;
     color: inherit;
 }
+
+
 .header__menu {
     margin: 0px 0px 0px 300px;
 }
@@ -113,19 +134,31 @@ body{
 }
 
 
-.menu__list {
+/* .menu__list {
     display: flex;
     flex-wrap: wrap;
     
+} */
+
+.menu__list
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .menu-item:not(:last-child) {
     margin: 0px 21px 0px 0px;
 
 }
+
+
 .menu__link {
     color:white;
     line-height: calc(24/14*100%);
+
 }
 
 
@@ -134,6 +167,18 @@ body{
     border-bottom: 1px solid white;
 
 }
+
+header.sticky
+{
+    background-color: white;
+}
+
+
+
+
+
+
+
 
 /* -------------------------------------------Бургер----------------------------------------------- */
 #checkbox_toggle
@@ -151,9 +196,9 @@ body{
 {
     background-color: white;
     display: block;
-    height: 2px;
+    height: 0.15rem;
     position: relative;
-    width: 26px;
+    width: 2rem;
 }
 
 
@@ -172,12 +217,12 @@ body{
 
 .hamburger-line::before
 {
-    top:6px;
+    top:0.4rem;
 }
 
 .hamburger-line::after
 {
-    top:-6px;
+    top:-0.4rem;
 }
 
 
@@ -218,7 +263,7 @@ body{
         min-height:20em;
         width: 100%;
         z-index: 99999999999999999999999999999999999999999;
-        background-color: #000 ;
+        background-color: gray;
         justify-content: space-around;
 
     }
@@ -254,6 +299,22 @@ body{
 
 }
 
+header.sticky .hamburger-line
+{
+    background-color: black;
+}
+
+header.sticky .hamburger-line::after
+{
+    background-color: black;
+}
+
+header.sticky .hamburger-line::before
+{
+    background-color: black;
+}
+
+
 @media (max-width: 510px) {
     .header__menu {
         margin: 0px 0px 0px 215px;
@@ -266,6 +327,17 @@ body{
     }
    
 }
+
+header.sticky .menu__link
+{
+    color: black;
+}
+
+header.sticky .header__logo
+{
+    color: black;
+}
+
 
 /* --------------------------------------------------------------------------------------------------------- */
 

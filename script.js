@@ -15,3 +15,7 @@ for (let i = 0; i < textElements.length; i++) {
     textElements[i].textContent = truncate(textElements[i].textContent,150);
 }
 
+window.addEventListener("scroll",function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", this.window.scrollY > 0);
+})
