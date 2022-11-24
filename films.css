@@ -181,7 +181,8 @@ h6{
     {
         align-items: center;
         justify-items: center;
-        margin:5em auto;
+        margin:0 auto;
+        margin-top: 4em;
         grid-template-areas: 
         "poster"
         "poster"
@@ -197,13 +198,13 @@ h6{
         margin-top: 2em;
         align-self: start;
     }
-    .header
+    /* .header
     {
         width: 100vh;
-    }
-    .footer
+    } */
+    /* .footer
     {
         width: 100vh;
-    }
+    } */
 }
 
