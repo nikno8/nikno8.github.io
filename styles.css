@@ -361,6 +361,7 @@ aside img
 
 
 
+
 .cards ul{
     display: flex;
     flex-direction:row;
@@ -463,6 +464,68 @@ aside img
     margin-top: 2em;
 }
 
+
+.social
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:2rem;
+}
+
+.social__icon
+{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.social__icon i
+{
+    color: gray;
+    font-size: 2rem;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.social__icon::after
+{
+    content: '';
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    background-color: aqua;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateY(-50%);
+}
+
+.social__icon:hover 
+{
+    color:white;
+}
+
+.social__icon:hover i 
+{
+    color:white;
+}
+
+
+.social__icon:hover::after
+{
+    transform: translateY(0);
+    transition: all ease-in-out .4s;
+    opacity: 1;
+   
+}
 
 
 /* ---------------------video--------------------------- */
