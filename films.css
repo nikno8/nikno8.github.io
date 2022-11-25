@@ -262,5 +262,10 @@ h6{
         align-self: start;
     }
 
+    .feedback
+    {
+        margin-top: 1rem;
+    }
+
 }
 

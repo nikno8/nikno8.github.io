@@ -1,19 +1,5 @@
 "use strict"
 
-function truncate(str, maxlength)
-{
-    maxlength=Number(maxlength);
-    if (str.length > maxlength){
-        str = str.slice(0, maxlength-3) + "...";
-    }
-    return str;
-}
-
-// let textElements  = document.querySelectorAll(".year_descr");
-// for (let i = 0; i < textElements.length; i++) {
-//     textElements[i].textContent = truncate(textElements[i].textContent,150);
-// }
-
 
 // смена цвета хедера при скролле
 window.addEventListener("scroll",function(){
@@ -93,4 +79,6 @@ switchMode.onclick = function(){
         theme.href = "light.css";
     }
 }
+
+
 
