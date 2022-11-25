@@ -80,3 +80,18 @@ function initRatings(){
     }
 }
 
+
+// смена темы на главной странице
+let switchMode = document.getElementById("switchmode");
+switchMode.onclick = function(){
+    let theme = document.getElementById("theme");
+
+    if (theme.getAttribute("href")=="light.css"){
+        theme.href = "styles.css";
+    }
+    else
+    {
+        theme.href = "light.css";
+    }
+}
+
