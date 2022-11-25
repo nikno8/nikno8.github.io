@@ -9,11 +9,10 @@ function truncate(str, maxlength)
     return str;
 }
 
-let textElements  = document.querySelectorAll(".year_descr");
-
-for (let i = 0; i < textElements.length; i++) {
-    textElements[i].textContent = truncate(textElements[i].textContent,150);
-}
+// let textElements  = document.querySelectorAll(".year_descr");
+// for (let i = 0; i < textElements.length; i++) {
+//     textElements[i].textContent = truncate(textElements[i].textContent,150);
+// }
 
 
 // смена цвета хедера при скролле

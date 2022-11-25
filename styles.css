@@ -71,7 +71,7 @@ header {
     z-index: 99;
     display: flex;
     background: black;
-    transition: 1.5s;
+    transition: 0.5s;
 }
 
 #switchmode
@@ -393,7 +393,7 @@ aside img
     margin-top: 2em;
     margin-right:2em;
     float: right;
-    width: 15em;
+    width: 30%;
     height: auto;
     margin-left:2em;
     border-radius: 20px;
@@ -422,6 +422,7 @@ aside img
     background-color: black;
     color:inherit;
     font-family: Montserrat;
+    width: 100%;
 }
 
 .footer_list {

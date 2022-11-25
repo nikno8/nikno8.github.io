@@ -164,3 +164,10 @@
         min-height:600px ;
     }
 }
+
+
+.read_more_link
+{
+    text-decoration: none;
+    color:gray;
+}
