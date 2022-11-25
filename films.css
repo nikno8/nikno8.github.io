@@ -58,7 +58,7 @@ h6{
 {
     display:grid;
     grid-template-areas:
-    "poster text button"
+    "poster text feedback"
     "poster about starring"
     "video about starring";
     margin:5em;
@@ -83,10 +83,13 @@ h6{
     border-radius:5%;
 }
 
-
-.feedback
-{
+.feedback{
+    grid-area: feedback;
     margin: 5em;
+}
+.feedback_button
+{
+    /* margin: 5em; */
     height: 1em;
     padding:1em;
     width: 15em;
@@ -99,7 +102,6 @@ h6{
     border: 1px solid black;
     color: white;
     line-height: 16px;
-    grid-area: button;
 }
 
 .main_text
@@ -174,7 +176,68 @@ h6{
 {
     flex: 0 0 auto;
 }
+/* --------------------------------Оценка---------------------- */
+.rating
+{
+    display: flex;
+    align-items: flex-end;
+    font-size: 2rem;
+    line-height: 0.75;
+    margin-bottom: 2rem;
+    position: relative;
+}
 
+.rating__body {
+    position: relative;
+}
+
+.rating__body::before
+{
+    content:'★★★★★';
+    display: block;
+}
+.rating__active {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top:0;
+    left: 0;
+    overflow: hidden;
+}
+
+.rating__active::before {
+    content:'★★★★★';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    color:#ffd300;
+
+}
+.rating__items {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+}
+.rating__item {
+    flex: 0 0 20%;
+    height: 100%;
+    opacity:0;
+}
+
+.rating__header{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.rating__value {
+    font-size: 60%;
+    padding-left: 1rem;
+    line-height: 1;
+}
 
 @media (max-width: 980px) {
     .grid-wrapper
@@ -187,7 +250,7 @@ h6{
         "poster"
         "poster"
         "text"
-        "button"
+        "feedback"
         "about "
         "about"
         "starring"
@@ -195,16 +258,9 @@ h6{
     }
     .starring
     {
-        margin-top: 2em;
+        margin-top: 2rem;
         align-self: start;
     }
-    /* .header
-    {
-        width: 100vh;
-    } */
-    /* .footer
-    {
-        width: 100vh;
-    } */
+
 }
 

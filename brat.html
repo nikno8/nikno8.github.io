@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap&subset=cyrillic-ext" rel="stylesheet" />
 </head>
 <body class="body">
-    <header class="header">
+    <header>
         <div class="header__container _container">
-            <a href="" class="header__logo">
+            <a href="index.html" class="header__logo">
                 Мир кино
             </a>
             <nav class="header__menu menu">
@@ -29,10 +29,12 @@
                     <li class="menu-item">
                         <a href="gallery.html" class="menu__link">Галерея</a>
                     </li>
+                   
                     <li class="menu-item">
                         <a href="#footer" class="menu__link">Контактная информация</a>
                     </li>
                 </ul>
+                
             </nav>
         </div>
     </header>
@@ -44,7 +46,27 @@
             <h2>Брат</h2>
             <p>Дембель Данила Багров защищает слабых в Петербурге 1990-х. Фильм, сделавший Сергея Бодрова народным героем</p>
         </section>
-        <button class="feedback">Оценить фильм</button>
+        <form action="#">
+            <div class="feedback">
+                <div class="rating rating_set">
+                    <div class="rating__body">
+                        <div class="rating__active"></div>
+                        <div class="rating__items">
+                            <input type="radio" class="rating__item" value="1" name="rating">
+                            <input type="radio" class="rating__item" value="2" name="rating">
+                            <input type="radio" class="rating__item" value="3" name="rating">
+                            <input type="radio" class="rating__item" value="4" name="rating">
+                            <input type="radio" class="rating__item" value="5" name="rating">
+                        </div>
+                    </div>
+                    
+                    <p class="rating__header">Ваша оценка:</p>
+                    <div class="rating__value"></div>
+                   
+                </div>
+                <button class="feedback_button" type="submit">Оценить фильм</button>
+            </div>
+        </form>
         <div class="film-video-wrapper">
             <video class="film-video" poster="img/brother_video_poster.jpeg" controls="controls" width="300" height="250">
                 <source src="videos/Отрывок из фильма Брат. Изготовление обреза..mp4">
@@ -114,4 +136,5 @@
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/d84399a1ec.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </html>
