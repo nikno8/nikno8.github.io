@@ -388,18 +388,23 @@ li h3
 
 }
 
-aside img
-{
-    margin-top: 2em;
-    margin-right:2em;
+
+.kind_wrapper{
     float: right;
-    width: 30%;
-    height: auto;
-    margin-left:2em;
-    border-radius: 20px;
 }
 
+.kind_image
+{
+    border-radius: 2rem;
+    width: 12rem;
+    height: auto;
+    margin-left: 1rem;
+}
 
+dt
+{
+    margin: 1.4rem auto;
+}
 
 
 

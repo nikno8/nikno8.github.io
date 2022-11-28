@@ -682,5 +682,20 @@ aside img
     opacity: 1;
 }
 
+.kind_wrapper{
+    float: right;
+}
 
+.kind_image
+{
+    border-radius: 2rem;
+    width: 12rem;
+    height: auto;
+    margin-left: 1rem;
+}
+
+dt
+{
+    margin: 1.4rem auto;
+}
 
