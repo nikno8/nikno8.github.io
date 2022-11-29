@@ -135,7 +135,7 @@
     margin: 2rem;
     margin-top: -2rem;
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity .2s;
 }
 
 .year_image_container:hover >.year_descr
@@ -176,7 +176,7 @@
     opacity: 0;
     max-height: 0;
     font-size: 0;
-    transition: .25s ease;
+    transition: .2s ease-in;
 
 } 
   
