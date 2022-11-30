@@ -350,6 +350,42 @@ header.sticky .header__logo
 }
 
 
+@media (max-width: 330px) {
+    .header__menu {
+        margin: 0px 0px 0px 115px;
+
+    }
+    .menu__link {
+        font-size: 18px;
+    }
+    .menu-item {
+        margin: 0px 21px 0px 0px;
+    
+    }
+    
+    .menu__list
+    {
+        overflow: hidden;
+        position: absolute;
+        right:0;
+        left: 0;
+        visibility: hidden;
+
+
+    }
+
+    .hamburger{
+
+        display: block;
+        padding: 20px 0;
+        margin-right: 3rem;
+
+    }
+
+    
+}
+
+
 /* --------------------------------------------------------------------------------------------------------- */
 
 /* --------------------------------------------PAGE-------------------------------------------- */
