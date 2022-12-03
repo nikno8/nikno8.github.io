@@ -229,7 +229,7 @@ header {
 
 
 /* мобильные устройства */
-@media (max-width: 709px) {
+@media (max-width: 780px) {
     .header__menu {
         margin: 0px 0px 0px 415px;
 
@@ -324,7 +324,7 @@ header.sticky .hamburger-line::before
 }
 
 
-@media (max-width: 510px) {
+@media (max-width: 530px) {
     .header__menu {
         margin: 0px 0px 0px 215px;
     }
@@ -358,9 +358,9 @@ header.sticky .header__logo
 }
 
 
-@media (max-width: 330px) {
+@media (max-width: 335px) {
     .header__menu {
-        margin: 0px 0px 0px 115px;
+        margin: 0px 0px 0px 205px;
 
     }
     .menu__link {
@@ -400,8 +400,9 @@ header.sticky .header__logo
 .page
 {
     flex: 1 1 auto;
-    background: url(https://wallpapertag.com/wallpaper/full/2/5/8/438278-free-download-black-steel-background-1920x1200-for-ios.jpg) no-repeat;
-    background-size: cover;
+    /* background: url(https://wallpapertag.com/wallpaper/full/2/5/8/438278-free-download-black-steel-background-1920x1200-for-ios.jpg) no-repeat; */
+    background:linear-gradient(rgb(104, 101, 101), rgba(47, 46, 46, 0.993)) no-repeat;
+    background-size:cover;
     margin:0;
 }
 
@@ -415,8 +416,10 @@ header.sticky .header__logo
 }
 .main_picture
 {
-    height: 40%;
-    width: 45%;
+    /* height: 40%; */
+    height: auto;
+    width: 70%;
+    border-radius: 1rem;
 }
 
 
@@ -676,7 +679,7 @@ dt
     position: absolute;
     width: 4em;
     height: 4em;
-    background-color: aqua;
+    background-color: wheat;
     border-radius: 50%;
     opacity: 0;
     transform: translateY(-50%);

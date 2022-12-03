@@ -131,6 +131,12 @@ header {
     }
 }
 
+@media (max-width: 330px) {
+    .header__menu {
+        margin: 0px 0px 0px 5px;
+    }
+}
+
 .menu {
     /* отступ безопасности */
     padding: 2rem 0; 
@@ -223,7 +229,7 @@ header {
 
 
 /* мобильные устройства */
-@media (max-width: 709px) {
+@media (max-width: 719px) {
     .header__menu {
         margin: 0px 0px 0px 415px;
 
@@ -293,6 +299,8 @@ header {
     }
 
 }
+
+
 
 header.sticky
 {
@@ -392,10 +400,9 @@ header.sticky .header__logo
 .page
 {
     flex: 1 1 auto;
-    background: rgb(194, 190, 190);
+    background:linear-gradient(white,gray) no-repeat;
     background-size: cover;
     margin:0;
-    transition:all .3s;
 }
 
 .main_picture_wrapper
@@ -404,12 +411,14 @@ header.sticky .header__logo
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;  
+    margin-bottom: 3rem;  
 }
 .main_picture
 {
-    height: 400px;
-    width: 450px;
+    /* height: 40%; */
+    height: auto;
+    width: 70%;
+    border-radius: 1rem;
 }
 
 
@@ -425,18 +434,23 @@ li h3
 
 }
 
-aside img
-{
-    margin-top: 2em;
-    margin-right:2em;
+
+.kind_wrapper{
     float: right;
-    width: 15em;
-    height: auto;
-    margin-left:2em;
-    border-radius: 20px;
 }
 
+.kind_image
+{
+    border-radius: 2rem;
+    width: 12rem;
+    height: auto;
+    margin-left: 1rem;
+}
 
+dt
+{
+    margin: 1.4rem auto;
+}
 
 
 
@@ -459,6 +473,7 @@ aside img
     background-color: white;
     color:black;
     font-family: Montserrat;
+    width: 100%;
 }
 
 .footer_list {
@@ -480,19 +495,27 @@ aside img
 
 
 
-
+.cards
+{
+    /* display: flex;
+    justify-content: center;
+    margin: 0 auto; */
+    width: 100%;
+}
 
 .cards ul{
     display: flex;
     flex-direction:row;
+    width: 100%;
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
     margin-bottom: 40px;
 }
 .cards .cards-item{
-    width: 500px;
+    width: 40%;
     height: auto;
     position: relative;
     margin-top: 40px;
@@ -513,7 +536,7 @@ aside img
 .cards-item p
 {
     position: absolute;
-    top:50%;
+    top:6rem;
     left: 1em;
     right: 1em;
     opacity: 0;
@@ -586,13 +609,45 @@ aside img
 }
 
 
+@media (max-width: 950px) {
+    .cards .cards-item{
+        width: 60%;
+    }
+}
+
+@media (max-width: 670px) {
+    .cards .cards-item{
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+    .cards .cards-item{
+        width: 100%;
+    }
+    .cards_header
+    {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .cards-item p
+    {
+        position: absolute;
+        top:5rem;
+        left: 1em;
+        right: 1em;
+        opacity: 0;
+    }
+}
 .social
 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    margin:1rem;
+    margin:2rem;
 }
 
 .social__icon
@@ -604,13 +659,13 @@ aside img
     width: 4em;
     height: 4em;
     border-radius: 50%;
-    background-color: black;
+    background-color: rgba(197, 195, 195, 0.852);
     overflow: hidden;
 }
 
 .social__icon i
 {
-    color: white;
+    color: black;
     font-size: 2rem;
     position: relative;
     z-index: 2;
@@ -623,7 +678,7 @@ aside img
     position: absolute;
     width: 4em;
     height: 4em;
-    background-color: aqua;
+    background-color: wheat;
     border-radius: 50%;
     opacity: 0;
     transform: translateY(-50%);
@@ -631,12 +686,12 @@ aside img
 
 .social__icon:hover 
 {
-    color:white;
+    color:black;
 }
 
 .social__icon:hover i 
 {
-    color:white;
+    color:black;
 }
 
 
@@ -719,20 +774,5 @@ aside img
     opacity: 1;
 }
 
-.kind_wrapper{
-    float: right;
-}
 
-.kind_image
-{
-    border-radius: 2rem;
-    width: 12rem;
-    height: auto;
-    margin-left: 1rem;
-}
-
-dt
-{
-    margin: 1.4rem auto;
-}
 
