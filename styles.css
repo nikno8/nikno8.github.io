@@ -534,7 +534,7 @@ dt
 .cards-item p
 {
     position: absolute;
-    top:50%;
+    top:6rem;
     left: 1em;
     right: 1em;
     opacity: 0;
@@ -607,6 +607,38 @@ dt
 }
 
 
+@media (max-width: 950px) {
+    .cards .cards-item{
+        width: 60%;
+    }
+}
+
+@media (max-width: 670px) {
+    .cards .cards-item{
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+    .cards .cards-item{
+        width: 100%;
+    }
+    .cards_header
+    {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .cards-item p
+    {
+        position: absolute;
+        top:5rem;
+        left: 1em;
+        right: 1em;
+        opacity: 0;
+    }
+}
 .social
 {
     display: flex;
