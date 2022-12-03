@@ -495,21 +495,25 @@ dt
 
 .cards
 {
-    display: flex;
+    /* display: flex;
     justify-content: center;
+    margin: 0 auto; */
+    width: 100%;
 }
 
 .cards ul{
     display: flex;
     flex-direction:row;
+    width: 100%;
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
     margin-bottom: 40px;
 }
 .cards .cards-item{
-    width: 500px;
+    width: 40%;
     height: auto;
     position: relative;
     margin-top: 40px;
