@@ -8,6 +8,7 @@ window.addEventListener("scroll",function(){
 })
 
 
+
 // оценка фильма
 const ratings = document.querySelectorAll(".rating");
 if (ratings.length>0){
