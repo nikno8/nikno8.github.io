@@ -163,6 +163,11 @@
         grid-template-rows: repeat(6,1fr);
         min-height:600px ;
     }
+    .year_image_container h2.not_first
+    {
+        align-self: start;
+        margin-top:.2rem;
+    }
 }
 
 
